@@ -20,35 +20,9 @@ border-radius: 10rem;
  }
 
 .carousel-inner img{
-   height: 40rem;
+   height: 35rem;
    width: 90%;
    margin: auto;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 3.6rem;
-  width: 3.6rem;
-  outline: black;
-  background-size: 100%, 100%;
-  border-radius: 0.2rem;
-  background-color: rgba(0, 0, 0, 0.9);
-  background-image: none;
-}
-
-.carousel-control-next-icon:after
-{
-  content: '>';
-  font-weight: bold;
-  font-size: 2rem;
-  color: white;
-}
-
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-weight: bold;
-  font-size: 2rem;
-  color: white;
 }
 
 .bannerhome{
@@ -58,7 +32,57 @@ border-radius: 10rem;
 }
 
 .petiscos{
-   height: 400px;
-   width: 25%;
-   margin: 0 -0.2% 0 -0.2%;
+   height: 350px;
+   width: 350px;
+}
+
+.post-content:hover {
+   background: rgba(0, 0, 0, 0.6);
+}
+
+.post-content {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: rgba(0, 0, 0, 0.3);
+   top:0;
+   left:0;
+   min-width: 350px;
+   min-height: 350px; 
+   position: absolute;
+   color: #ffffff; 
+}
+
+.fontetema {
+   font-family: 'Norican', cursive;
+   font-size: 3rem;
+}
+
+.caption h3 {
+   font-family: 'Norican', cursive;
+   font-size: 3rem;
+}
+
+.thumbnail{
+   position:relative;
+   
+}
+
+.botaoz {
+   display: flex;
+   justify-content: center;
+   align-content: center;
+}
+
+.botaocard{
+   margin: 1rem;
+   color: whitesmoke;
+   background-color: brown;
+   border-radius: 10rem;
+   font-size: 1.9rem;
+   max-width: 500px;;
+}
+
+.botaocard:hover {
+   background-color: cadetblue;
 }
