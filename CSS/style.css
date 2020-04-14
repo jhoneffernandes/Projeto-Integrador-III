@@ -115,6 +115,7 @@ border-radius: 10rem;
 .centralizartextobanner h1{
       font-family: 'Norican', cursive;
    font-size: 7.5rem;
+   line-height: 1;
 }
 
 .circuloitens {
@@ -129,4 +130,10 @@ border-radius: 10rem;
   border: 0;
   border-top: 10px solid rgba(0, 0, 0, 0.9);
   border-radius: 1rem;
+}
+
+.localizacaoimg img {
+   max-height: 500px;
+   max-width: 500px;
+   width: 100%;
 }
