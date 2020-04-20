@@ -132,11 +132,17 @@ border-radius: 10rem;
   border-radius: 1rem;
 }
 
+
+
+/* Página Localização*/
+
 .localizacaoimg img {
    max-height: 500px;
    max-width: 500px;
    width: 100%;
 }
+
+/* Página Contato*/
 
 .formulario {
    margin: auto;
@@ -165,3 +171,11 @@ border-radius: 10rem;
    border: 0;
    margin: 1rem;
 }
+
+
+/* Página Sobre*/
+
+.tamanhosobre {
+   height: 550px;
+}
+
