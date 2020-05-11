@@ -20,13 +20,13 @@ border-radius: 10rem;
  }
 
 .carousel-inner img{
-   max-height: 700px;
+   max-height: 500px;
    margin: auto;
 }
 
 .bannerhome{
-   max-height: 40rem;
-   width: 70%;
+   max-height: 500px;
+   width: 40%;
    margin: auto;
 }
 
@@ -124,7 +124,7 @@ border-radius: 10rem;
    border-radius: 50%;
 }
 
-.dividerz hr{
+.dividerz hr , .dividerzred hr{
    margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
@@ -132,7 +132,14 @@ border-radius: 10rem;
   border-radius: 1rem;
 }
 
+.dividerz hr{
+  border-top: 10px solid rgba(0, 0, 0, 0.9);
+}
 
+.dividerzred hr{
+   border-top: 10px solid rgba(255, 0, 0, 0.9);
+ }
+ 
 
 /* Página Localização*/
 
@@ -175,7 +182,4 @@ border-radius: 10rem;
 
 /* Página Sobre*/
 
-.tamanhosobre {
-   height: 550px;
-}
 
