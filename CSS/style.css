@@ -20,7 +20,7 @@ border-radius: 10rem;
  }
 
 .carousel-inner img{
-   max-height: 500px;
+   max-height: 450px;
    margin: auto;
 }
 
@@ -28,11 +28,12 @@ border-radius: 10rem;
    max-height: 500px;
    width: 40%;
    margin: auto;
+   min-height: 350px;
 }
 
 .petiscos{
-   height: 350px;
-   width: 350px;
+   height: 300px;
+   width: 300px;
 }
 
 .post-content:hover {
@@ -46,8 +47,8 @@ border-radius: 10rem;
    background: rgba(0, 0, 0, 0.3);
    top:0;
    left:0;
-   min-width: 350px;
-   min-height: 350px; 
+   min-width: 300px;
+   min-height: 300px; 
    position: absolute;
    color: #ffffff; 
 }
@@ -65,12 +66,6 @@ border-radius: 10rem;
 .thumbnail{
    position:relative;
    
-}
-
-.botaoz {
-   display: flex;
-   justify-content: center;
-   align-content: center;
 }
 
 .botaocard{
@@ -96,7 +91,7 @@ border-radius: 10rem;
 
 .containercardapio img {
    width: 100%;
-   height: 400px;
+   height: 300px;
 }
 
 .centralizartextobanner {
@@ -107,20 +102,21 @@ border-radius: 10rem;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   background: rgba(0, 0, 0, 0.5);
+   background: rgba(0, 0, 0, 0.62);
    min-width: 100%;
-   min-height: 400px; 
+   min-height: 300px; 
 }
 
 .centralizartextobanner h1{
       font-family: 'Norican', cursive;
-   font-size: 6rem;
+   font-size: 4rem;
    line-height: 1;
+   word-break: keep-all;
 }
 
 .circuloitens {
-   height: 150px;
-   width: 150px;
+   height: 100px;
+   width: 100px;
    border-radius: 50%;
 }
 
@@ -178,7 +174,6 @@ border-radius: 10rem;
    border: 0;
    margin: 1rem;
 }
-
 
 /* Página Sobre*/
 
