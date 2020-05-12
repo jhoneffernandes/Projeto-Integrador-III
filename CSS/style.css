@@ -175,6 +175,32 @@ border-radius: 10rem;
    margin: 1rem;
 }
 
-/* Página Sobre*/
+/* Página Registrar*/
 
-
+.note
+{
+    text-align: center;
+    height: 80px;
+    background: -webkit-linear-gradient(left, #ffa600, #ff0000);
+    font-weight: bold;
+    line-height: 80px;
+}
+.form-content
+{
+    padding: 5%;
+    border: 3px solid #ffa600;
+    margin-bottom: 2%;
+}
+.form-control{
+    border-radius:1.5rem;
+}
+.btnSubmit
+{
+    border:none;
+    border-radius:1.5rem;
+    padding: 1%;
+    width: 20%;
+    cursor: pointer;
+    background: #c40000;
+    color: #fff;
+}
