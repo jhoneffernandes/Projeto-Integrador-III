@@ -36,21 +36,51 @@ border-radius: 10rem;
    width: 300px;
 }
 
-.post-content:hover {
+.lanchedestaque {
+   height: 400px;
+   width: 300px;
+   border-radius: 10%;
+}
+
+.lanchedestaque2 {
+   height: 300px;
+   width: 300px;
+   border-radius: 10%;
+}
+
+.post-content:hover ,.post-content2:hover ,.post-content3:hover {
    background: rgba(0, 0, 0, 0.6);
 }
 
-.post-content {
+.post-content , .post-content2 , .post-content3 {
    display: flex;
    justify-content: center;
    align-items: center;
    background: rgba(0, 0, 0, 0.3);
    top:0;
    left:0;
+   position: absolute;
+   color: #ffffff;
+}
+
+.post-content {
    min-width: 300px;
    min-height: 300px; 
-   position: absolute;
-   color: #ffffff; 
+}
+
+.post-content2 {
+   border-radius: 10%;
+   min-width: 300px;
+   min-height: 300px; 
+   box-shadow: 1px 1px 10px black;
+}
+
+
+.post-content3 {
+   border-radius: 10%;
+   min-width: 300px;
+   min-height: 400px; 
+   box-shadow: 1px 1px 10px black;
 }
 
 .fontetema {
@@ -181,26 +211,16 @@ border-radius: 10rem;
 {
     text-align: center;
     height: 80px;
-    background: -webkit-linear-gradient(left, #ffa600, #ff0000);
+    background: -webkit-linear-gradient(left, #ff0000a2, #ff0000a2);
     font-weight: bold;
     line-height: 80px;
 }
 .form-content
 {
     padding: 5%;
-    border: 3px solid #ffa600;
+    border: 3px solid #ff0000a2;
     margin-bottom: 2%;
 }
 .form-control{
     border-radius:1.5rem;
-}
-.btnSubmit
-{
-    border:none;
-    border-radius:1.5rem;
-    padding: 1%;
-    width: 20%;
-    cursor: pointer;
-    background: #c40000;
-    color: #fff;
 }
