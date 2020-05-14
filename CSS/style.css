@@ -224,3 +224,10 @@ border-radius: 10rem;
 .form-control{
     border-radius:1.5rem;
 }
+
+
+/* Página edição de informações de perfil do usuário*/
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+   background-color: rgb(255, 196, 0)!important;
+ }
