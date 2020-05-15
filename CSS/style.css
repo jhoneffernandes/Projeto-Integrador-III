@@ -177,33 +177,7 @@ border-radius: 10rem;
 
 /* Página Contato*/
 
-.formulario {
-   margin: auto;
 
-	background-color: red;
-	max-width: 500px;
-	max-height: 500px;
-
-	box-shadow: 1px 1px 10px black;
-}
-
-.formulario input , .formulario textarea{
-	max-width: 280px;
-	padding: 10px 18px;
-	margin: 1rem 0;
-
-	border-radius: 5px;
-	border-color: rgb(40, 40, 40);
-	border-width: 2px;
-}
-
-#botoes-contato button{
-	font-size: 1.5rem;
-	color: black;
-	border-radius: 5px;
-   border: 0;
-   margin: 1rem;
-}
 
 /* Página Registrar*/
 
@@ -215,12 +189,16 @@ border-radius: 10rem;
     font-weight: bold;
     line-height: 80px;
 }
+
 .form-content
 {
     padding: 5%;
     border: 3px solid #ff0000a2;
     margin-bottom: 2%;
 }
+
+
+
 .form-control{
     border-radius:1.5rem;
 }
