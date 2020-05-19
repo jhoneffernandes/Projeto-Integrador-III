@@ -1,3 +1,15 @@
+ .bg {
+   /* The image used */
+   background-image: url(../IMGS/fundoteste.svg);
+ 
+   /* Full height */
+   height: 100%;
+ 
+   /* Center and scale the image nicely */
+   background-repeat: repeat;
+   
+}
+
 .logo img{
     height: 6rem;
 }
@@ -37,16 +49,9 @@ border-radius: 10rem;
 }
 
 .lanchedestaque {
-   height: 400px;
-   width: 300px;
    border-radius: 10%;
 }
 
-.lanchedestaque2 {
-   height: 300px;
-   width: 300px;
-   border-radius: 10%;
-}
 
 .post-content:hover ,.post-content2:hover ,.post-content3:hover {
    background: rgba(0, 0, 0, 0.6);
@@ -66,21 +71,6 @@ border-radius: 10rem;
 .post-content {
    min-width: 300px;
    min-height: 300px; 
-}
-
-.post-content2 {
-   border-radius: 10%;
-   min-width: 300px;
-   min-height: 300px; 
-   box-shadow: 1px 1px 10px black;
-}
-
-
-.post-content3 {
-   border-radius: 10%;
-   min-width: 300px;
-   min-height: 400px; 
-   box-shadow: 1px 1px 10px black;
 }
 
 .fontetema {
@@ -148,6 +138,20 @@ border-radius: 10rem;
    height: 100px;
    width: 100px;
    border-radius: 50%;
+}
+
+.citens {
+   height: 300px;
+   width: 300px;
+   border-radius: 15%;
+}
+
+.citens img {
+   height: 300px;
+   width:  300px;
+   border-radius: 15%;  
+   border: 5px solid rgb(255, 0, 0);
+
 }
 
 .dividerz hr , .dividerzred hr{
