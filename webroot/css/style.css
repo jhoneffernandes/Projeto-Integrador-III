@@ -1,0 +1,215 @@
+ .bg {
+   /* The image used */
+   background-image: url(../img/fundoteste.svg);
+ 
+   /* Full height */
+   height: 100%;
+ 
+   /* Center and scale the image nicely */
+   background-repeat: repeat;
+   
+}
+
+.logo img{
+    height: 6rem;
+}
+
+.logowhatsapp:hover {
+   background-color: rgb(179, 255, 0);
+border-radius: 10rem;
+}
+
+.logofacebook:hover {
+    background-color: rgb(0, 195, 255);
+    border-radius: 0rem 10rem 10rem 0rem;
+
+ }
+
+ .logoemail:hover {
+    background-color: rgb(255, 202, 202);
+    border-radius: 10rem 0rem 0rem 10rem;
+
+ }
+
+.carousel-inner img{
+   max-height: 450px;
+   margin: auto;
+}
+
+.bannerhome{
+   max-height: 500px;
+   width: 40%;
+   margin: auto;
+   min-height: 350px;
+}
+
+.petiscos{
+   height: 300px;
+   width: 300px;
+}
+
+.lanchedestaque {
+   border-radius: 10%;
+}
+
+
+.post-content:hover ,.post-content2:hover ,.post-content3:hover {
+   background: rgba(0, 0, 0, 0.6);
+}
+
+.post-content , .post-content2 , .post-content3 {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: rgba(0, 0, 0, 0.3);
+   top:0;
+   left:0;
+   position: absolute;
+   color: #ffffff;
+}
+
+.post-content {
+   min-width: 300px;
+   min-height: 300px; 
+}
+
+.fontetema {
+   font-family: 'Norican', cursive;
+   font-size: 2.5rem;
+}
+
+.caption h3 {
+   font-family: 'Norican', cursive;
+   font-size: 3rem;
+}
+
+.thumbnail{
+   position:relative;
+   
+}
+
+.botaocard{
+   margin: 1rem;
+   color: whitesmoke;
+   background-color: brown;
+   border-radius: 10rem;
+   font-size: 1.9rem;
+   max-width: 500px;;
+}
+
+.botaocard:hover {
+   background-color: cadetblue;
+}
+
+/* Páginas do cardápio (Lanches) */
+
+.containercardapio {
+   position: relative;
+   text-align: center;
+   color: white;
+}
+
+.containercardapio img {
+   width: 100%;
+   height: 300px;
+}
+
+.centralizartextobanner {
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background: rgba(0, 0, 0, 0.62);
+   min-width: 100%;
+   min-height: 300px; 
+}
+
+.centralizartextobanner h1{
+      font-family: 'Norican', cursive;
+   font-size: 4rem;
+   line-height: 1;
+   word-break: keep-all;
+}
+
+.circuloitens {
+   height: 100px;
+   width: 100px;
+   border-radius: 50%;
+}
+
+.citens {
+   height: 300px;
+   width: 300px;
+   border-radius: 15%;
+}
+
+.citens img {
+   height: 300px;
+   width:  300px;
+   border-radius: 15%;  
+   border: 5px solid rgb(255, 0, 0);
+
+}
+
+.dividerz hr , .dividerzred hr{
+   margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 10px solid rgba(0, 0, 0, 0.9);
+  border-radius: 1rem;
+}
+
+.dividerz hr{
+  border-top: 10px solid rgba(0, 0, 0, 0.9);
+}
+
+.dividerzred hr{
+   border-top: 10px solid rgba(255, 0, 0, 0.9);
+ }
+ 
+
+/* Página Localização*/
+
+.localizacaoimg img {
+   max-height: 500px;
+   max-width: 500px;
+   width: 100%;
+}
+
+/* Página Contato*/
+
+
+
+/* Página Registrar*/
+
+.note
+{
+    text-align: center;
+    height: 80px;
+    background: -webkit-linear-gradient(left, #ff0000a2, #ff0000a2);
+    font-weight: bold;
+    line-height: 80px;
+}
+
+.form-content
+{
+    padding: 5%;
+    border: 3px solid #ff0000a2;
+    margin-bottom: 2%;
+}
+
+
+
+.form-control{
+    border-radius:1.5rem;
+}
+
+
+/* Página edição de informações de perfil do usuário*/
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+   background-color: rgb(255, 196, 0)!important;
+ }
