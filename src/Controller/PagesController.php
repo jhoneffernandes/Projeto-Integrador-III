@@ -44,7 +44,8 @@ class PagesController extends AppController
      * @throws \Cake\View\Exception\MissingTemplateException In debug mode.
      */
     public function display(...$path): ?Response
-    {
+    {$this->Authorization->skipAuthorization();
+
         if (!$path) {
             return $this->redirect('/');
         }
@@ -62,12 +63,13 @@ class PagesController extends AppController
         $this->set(compact('page', 'subpage'));
 
         try {
-            return $this->render(implode('/', $path));
+            return $this->render(implode('/', $path), 'gela');
         } catch (MissingTemplateException $exception) {
             if (Configure::read('debug')) {
                 throw $exception;
             }
             throw new NotFoundException();
         }
+
     }
 }

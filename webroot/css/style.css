@@ -10,6 +10,10 @@
    
 }
 
+.bgfooter {
+   background-color: gainsboro;
+}
+
 .logo img{
     height: 6rem;
 }
@@ -212,4 +216,8 @@ border-radius: 10rem;
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
    background-color: rgb(255, 196, 0)!important;
+ }
+
+ .teste a{
+    text-decoration: none;
  }

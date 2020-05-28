@@ -1,5 +1,8 @@
 <nav class="navbar navbar-dark bg-danger">
-<a class="navbar-brand logo" href="/"><img src="img/logo2.png" alt=""></a>
+<a class="navbar-brand logo" href="/painel">
+<?= $this->Html->image('gglogo.svg', ['alt' => 'Image']); ?>
+
+</a>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>

@@ -2,7 +2,7 @@
     
     <div class="col">
 
-      <div class="row my-2 text-center bg-secondary">
+      <div class="row my-2 text-center bg-white">
         <a class="col logofacebook" href="#"><i class="my-3 fab fa-facebook-f" style="font-size: 2rem;"></i></a>
         <a class="col logowhatsapp" href="#"><i class="my-3 fab fa-whatsapp" style="font-size: 2rem; color: rgb(17, 148, 0);"></span></i></a>
         <a class="col logoemail" href="#"><i class="my-3 far fa-envelope" style="font-size: 2rem; color: red;"></span></i></a>

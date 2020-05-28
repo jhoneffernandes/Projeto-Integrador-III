@@ -1,6 +1,6 @@
 <header>
     <nav class="d-flex justify-content-between navbar h5 navbar-expand-lg navbar-light font-weight-bold bg-danger">
-        <a class="navbar-brand logo" href="/"><img src="img/logo2.png" alt=""></a>
+        <a class="navbar-brand logo" href="/"><img src="img/gglogo.svg" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
