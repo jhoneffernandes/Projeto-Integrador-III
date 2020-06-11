@@ -2,25 +2,18 @@
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="img/Novidade1.jpg" class="d-block w-100" alt="">
+          <img src="img/promo1.png" class="img-fluid" alt="">
           <div class="carousel-caption d-none d-md-block">
            
           </div>
         </div>
         <div class="carousel-item">
-          <img src="img/cardapioonline.png" class="d-block w-100" alt="">
+          <img src="img/promo2.png" class="img-fluid" alt="">
           <div class="carousel-caption d-none d-md-block">
           
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="img/promoção1.jpg" class="d-block w-100" alt="">
-          <div class="carousel-caption d-none d-md-block">
-            
           </div>
         </div>
       </div>
@@ -39,29 +32,29 @@
       <h1 class="text-center font-weight-bold my-5 fontetema">Novos lanches do Gela!</h1>
       <div class="dividerzred"><hr></div>
 
-      <p class="text-center my-5 h5"> Vem que vem! Os novos lanches do Géla Guéla são os melhores da cidade, nossa nova promoção vai te deixar com água na boca, X-Tudo por apenas R$ 12,90, não perca tempo, vem pro Géla! </p>
+      <p class="text-center my-5 h4 font-weight-bold"> Vem que vem! Os novos lanches do Gela Guela são os melhores da cidade, nossa nova promoção vai te deixar com água na boca, X-Tudo por apenas R$ 12,90, não perca tempo, vem pro Gela! </p>
       <div class="container marketing my-5">
         <div class="row d-flex justify-content-center align-items-center">
           
-          <div class="col-12 col-md-5 col-lg-3 my-5 mx-4 text-center d-flex justify-content-center align-items-center flex-column">
-            <a href="lanches.html" class="text-decoration-none text-danger citens">
+        <div class="col my-5 mx-4 text-center d-flex justify-content-center align-items-center flex-column">
+            <a href="/lanches" class="text-decoration-none text-danger citens">
+            <h2 class="fontetema text-nowrap">Triplo bacon</h2>
               <img class="" src="img/lancheimg2.jpg" alt="">
-                  <h2 class="my-4 fontetema text-wrap">Triplo bacon cheddar</h2>
             </a>
             </div>
       
-          <div class="col-12 col-md-5 col-lg-3 my-5 mx-4 text-center d-flex justify-content-center align-items-center flex-column">
-            <a href="lanches.html" class="text-decoration-none text-danger citens">
+          <div class="col my-5 mx-4 text-center d-flex justify-content-center align-items-center flex-column">
+            <a href="/lanches" class="text-decoration-none text-danger citens">
+            <h2 class="fontetema text-nowrap">X-tudo</h2>
               <img class="" src="img/lancheimg1.jpg" alt="">
-                   <h2 class="my-4 fontetema text-nowrap">X-tudo</h2>
             </a>
             </div>
       
       
-                <div class="col-12 col-md-5 col-lg-3 my-5 mx-4 text-center d-flex justify-content-center align-items-center flex-column">
-                <a href="lanches.html" class="text-decoration-none text-danger citens">
+                <div class="col my-5 mx-4 text-center d-flex justify-content-center align-items-center flex-column">
+                <a href="/lanches" class="text-decoration-none text-danger citens">
+                <h2 class="fontetema text-nowrap">X-costela</h2>
                   <img class="" src="img/lancheimg3.jpg" alt="">
-                    <h2 class="my-4 fontetema text-nowrap">X-costela</h2>
                 </a>
                 </div>
               
@@ -76,7 +69,7 @@
         <div class="d-flex flex-wrap justify-content-center text-center">
 
   <div class="thumbnail">
-          <a href="lanches.html">
+          <a href="/lanches">
             <img class="petiscos" src="img/lanche.jpg" alt="lanches">
           <div class="caption post-content">
                <h3>Lanches</h3>            
@@ -85,7 +78,7 @@
   </div>
 
        <div class="thumbnail">
-        <a href="porcoes.html">
+        <a href="/porcoes">
         <img class="petiscos" src="img/petisco2.jpg" alt="Porções">
             <div class="caption post-content">
                    <h3>Porções</h3>            
@@ -94,7 +87,7 @@
      </div>
 
      <div class="thumbnail">
-      <a href="cervejas.html">
+      <a href="/cervejas">
       <img class="petiscos" src="img/cerveja.webp" alt="Cervejas">
           <div class="caption post-content">
                  <h3>Cervejas</h3>            
@@ -103,7 +96,7 @@
    </div>
 
 <div class="thumbnail">
-  <a href="bebidasna.html">
+  <a href="/bebidasna">
   <img class="petiscos" src="img/bebidasna.jpg" alt="Bebidas não-alcoólicas">
       <div class="caption post-content">
              <h3>Bebidas não-alcoólicas</h3>            
@@ -114,3 +107,7 @@
         
        
     </div>
+
+    <?php
+$this->assign('title', 'Gela Guela - Ínicio');
+?>

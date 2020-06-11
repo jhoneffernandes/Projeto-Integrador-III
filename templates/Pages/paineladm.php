@@ -131,3 +131,7 @@
 
           </div>
           </div>
+
+          <?php
+$this->assign('title', 'Gela Guela - Painel Administrativo');
+?>

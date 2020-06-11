@@ -27,8 +27,12 @@
                     <td><?= h($user->password) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Role') ?></th>
-                    <td><?= h($user->role) ?></td>
+                    <th><?= __('CPF') ?></th>
+                    <td><?= h($user->CPF) ?></td>
+                </tr>
+                <tr>
+                    <th><?= __('Phone') ?></th>
+                    <td><?= h($user->phone) ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Email') ?></th>
@@ -37,14 +41,6 @@
                 <tr>
                     <th><?= __('Id') ?></th>
                     <td><?= $this->Number->format($user->id) ?></td>
-                </tr>
-                <tr>
-                    <th><?= __('CPF') ?></th>
-                    <td><?= $this->Number->format($user->CPF) ?></td>
-                </tr>
-                <tr>
-                    <th><?= __('Phone') ?></th>
-                    <td><?= $this->Number->format($user->phone) ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Created') ?></th>

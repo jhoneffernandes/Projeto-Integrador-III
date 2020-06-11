@@ -10,7 +10,7 @@ use Cake\ORM\Entity;
  *
  * @property int $id
  * @property string $client
- * @property int $price
+ * @property string $price
  */
 class Reservation extends Entity
 {

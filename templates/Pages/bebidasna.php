@@ -17,20 +17,20 @@
 <img class="circuloitens" src="img/sucolaranja.png" alt="">
 
       <h2 class="my-4 fontetema text-nowrap">Suco de laranja</h2>
-      <h4 class="my-4 text-danger">Por R$5,60</h4>
+      <h4 class="my-4 text-danger h3 font-weight-bold">Por R$5,60</h4>
 
-      <p class="h5">500 ml</p>
-      <a class="my-4 btn btn-danger text-warning" href="#" role="button"><p class="h4">Clique aqui para encomendar</p></a>
+      <p class="h3 font-weight-bold">500 ml</p>
+      <a class="my-4 btn btn-danger text-white" href="#" role="button"><p class="h3">Clique aqui para encomendar</p></a>
     </div>
 
     <div class="col-12 col-md-5 col-lg-3 mx-4 my-5 text-center d-flex justify-content-center align-items-center flex-column">
       <img class="circuloitens" src="img/sucomaracuja.png" alt="">
       
             <h2 class="my-4 fontetema text-nowrap">Suco de maracujá</h2>
-            <h4 class="my-4 text-danger">Por R$5,99</h4>
+            <h4 class="my-4 text-danger h3 font-weight-bold">Por R$5,99</h4>
       
-            <p class="h5">500 ml</p>
-            <a class="my-4 btn btn-danger text-warning" href="#" role="button"><p class="h4">Clique aqui para encomendar</p></a>
+            <p class="h3 font-weight-bold">500 ml</p>
+            <a class="my-4 btn btn-danger text-white" href="#" role="button"><p class="h3">Clique aqui para encomendar</p></a>
           </div>
 
 
@@ -38,30 +38,30 @@
             <img class="circuloitens" src="img/sucoabacaxi.png" alt="">
             
                   <h2 class="my-4 fontetema text-nowrap">Suco de abacaxi</h2>
-                  <h4 class="my-4 text-danger">Por R$5,50</h4>
+                  <h4 class="my-4 text-danger h3 font-weight-bold">Por R$5,50</h4>
             
-                  <p class="h5">500 ml</p>
-                  <a class="my-4 btn btn-danger text-warning" href="#" role="button"><p class="h4">Clique aqui para encomendar</p></a>
+                  <p class="h3 font-weight-bold">500 ml</p>
+                  <a class="my-4 btn btn-danger text-white" href="#" role="button"><p class="h3">Clique aqui para encomendar</p></a>
                 </div>
 
                 <div class="col-12 col-md-5 col-lg-3 mx-4 my-5 text-center d-flex justify-content-center align-items-center flex-column">
                   <img class="circuloitens" src="img/sucolaranja.png" alt="">
                   
                         <h2 class="my-4 fontetema text-nowrap">Suco de laranja</h2>
-                        <h4 class="my-4 text-danger">Por R$5,60</h4>
+                        <h4 class="my-4 text-danger h3 font-weight-bold">Por R$5,60</h4>
                   
-                        <p class="h5">500 ml</p>
-                        <a class="my-4 btn btn-danger text-warning" href="#" role="button"><p class="h4">Clique aqui para encomendar</p></a>
+                        <p class="h3 font-weight-bold">500 ml</p>
+                        <a class="my-4 btn btn-danger text-white" href="#" role="button"><p class="h3">Clique aqui para encomendar</p></a>
                       </div>
                   
                       <div class="col-12 col-md-5 col-lg-3 mx-4 my-5 text-center d-flex justify-content-center align-items-center flex-column">
                         <img class="circuloitens" src="img/sucomaracuja.png" alt="">
                         
                               <h2 class="my-4 fontetema text-nowrap">Suco de maracujá</h2>
-                              <h4 class="my-4 text-danger">Por R$5,99</h4>
+                              <h4 class="my-4 text-danger h3 font-weight-bold">Por R$5,99</h4>
                         
-                              <p class="h5">500 ml</p>
-                              <a class="my-4 btn btn-danger text-warning" href="#" role="button"><p class="h4">Clique aqui para encomendar</p></a>
+                              <p class="h3 font-weight-bold">500 ml</p>
+                              <a class="my-4 btn btn-danger text-white" href="#" role="button"><p class="h3">Clique aqui para encomendar</p></a>
                             </div>
                   
                   
@@ -69,11 +69,14 @@
                               <img class="circuloitens" src="img/sucoabacaxi.png" alt="">
                               
                                     <h2 class="my-4 fontetema text-nowrap">Suco de abacaxi</h2>
-                                    <h4 class="my-4 text-danger">Por R$5,50</h4>
+                                    <h4 class="my-4 text-danger h3 font-weight-bold">Por R$5,50</h4>
                               
-                                    <p class="h5">500 ml</p>
-                                    <a class="my-4 btn btn-danger text-warning" href="#" role="button"><p class="h4">Clique aqui para encomendar</p></a>
+                                    <p class="h3 font-weight-bold">500 ml</p>
+                                    <a class="my-4 btn btn-danger text-white" href="#" role="button"><p class="h3">Clique aqui para encomendar</p></a>
                                   </div>
 
   </div>
 </div>
+<?php
+$this->assign('title', 'Gela Guela - Bebidas não-alcoólicas');
+?>

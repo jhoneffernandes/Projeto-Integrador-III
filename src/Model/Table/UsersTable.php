@@ -69,18 +69,15 @@ class UsersTable extends Table
             ->allowEmptyString('password');
 
         $validator
-            ->scalar('role')
-            ->maxLength('role', 20)
-            ->allowEmptyString('role');
-
-        $validator
-            ->integer('CPF')
+            ->scalar('CPF')
+            ->maxLength('CPF', 11)
             ->requirePresence('CPF', 'create')
             ->notEmptyString('CPF')
             ->add('CPF', 'unique', ['rule' => 'validateUnique', 'provider' => 'table']);
 
         $validator
-            ->integer('phone')
+            ->scalar('phone')
+            ->maxLength('phone', 11)
             ->requirePresence('phone', 'create')
             ->notEmptyString('phone');
 

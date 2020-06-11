@@ -45,3 +45,7 @@
             </div>
         </div>
     </div>
+
+    <?php
+$this->assign('title', 'Gela Guela - Registrar');
+?>

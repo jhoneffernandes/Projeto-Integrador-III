@@ -43,9 +43,17 @@ class PagesController extends AppController
      *   be found and not in debug mode.
      * @throws \Cake\View\Exception\MissingTemplateException In debug mode.
      */
-    public function display(...$path): ?Response
-    {$this->Authorization->skipAuthorization();
 
+    public function beforeFilter(\Cake\Event\EventInterface $event)
+    {
+        parent::beforeFilter($event);
+        // Configure the login action to not require authentication, preventing
+        // the infinite redirect loop issue
+        $this->Authentication->addUnauthenticatedActions(['display']);
+    }
+
+    public function display(...$path): ?Response
+    {
         if (!$path) {
             return $this->redirect('/');
         }
@@ -72,4 +80,5 @@ class PagesController extends AppController
         }
 
     }
+    
 }

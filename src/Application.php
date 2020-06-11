@@ -31,14 +31,6 @@ use Authentication\AuthenticationServiceProviderInterface;
 use Authentication\Middleware\AuthenticationMiddleware;
 use Psr\Http\Message\ServerRequestInterface;
 
-use Authorization\AuthorizationService;
-use Authorization\AuthorizationServiceInterface;
-use Authorization\AuthorizationServiceProviderInterface;
-use Authorization\Middleware\AuthorizationMiddleware;
-use Authorization\Policy\OrmResolver;
-use Psr\Http\Message\ResponseInterface;
-
-
 /**
  * Application setup class.
  *
@@ -46,7 +38,7 @@ use Psr\Http\Message\ResponseInterface;
  * want to use in your application.
  */
 class Application extends BaseApplication
- implements AuthenticationServiceProviderInterface, AuthorizationServiceProviderInterface
+ implements AuthenticationServiceProviderInterface
    
 {
     /**
@@ -90,8 +82,7 @@ public function middleware(MiddlewareQueue $middlewareQueue): MiddlewareQueue
         // ... other middleware added before
         ->add(new RoutingMiddleware($this))
         // add Authentication after RoutingMiddleware
-        ->add(new AuthenticationMiddleware($this))
-        -> add(new AuthorizationMiddleware($this));
+        ->add(new AuthenticationMiddleware($this));
 
 
 
@@ -109,7 +100,7 @@ public function getAuthenticationService(ServerRequestInterface $request): Authe
     // Load identifiers, ensure we check email and password fields
     $authenticationService->loadIdentifier('Authentication.Password', [
         'fields' => [
-            'username' => 'email',
+            'username' => 'username',
             'password' => 'password',
         ]
     ]);
@@ -119,7 +110,7 @@ public function getAuthenticationService(ServerRequestInterface $request): Authe
     // Configure form data check to pick email and password
     $authenticationService->loadAuthenticator('Authentication.Form', [
         'fields' => [
-            'username' => 'email',
+            'username' => 'username',
             'password' => 'password',
         ],
         'loginUrl' => '/users/login',
@@ -128,12 +119,7 @@ public function getAuthenticationService(ServerRequestInterface $request): Authe
     return $authenticationService;
     
 }
-public function getAuthorizationService(ServerRequestInterface $request): AuthorizationServiceInterface
-{
-    $resolver = new OrmResolver();
 
-    return new AuthorizationService($resolver);
-}
     /**
      * Bootrapping for CLI application.
      *

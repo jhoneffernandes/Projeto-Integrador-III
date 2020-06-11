@@ -1,5 +1,5 @@
 <header>
-    <nav class="d-flex justify-content-between navbar h5 navbar-expand-lg navbar-light font-weight-bold bg-danger">
+    <nav class="d-flex justify-content-between navbar h4 navbar-expand-lg navbar-light font-weight-bold bg-danger">
         <a class="navbar-brand logo" href="/"><img src="img/gglogo.svg" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -12,13 +12,13 @@
                 Cardápio
               </a>
               <div class="bg-danger dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item text-warning h5 bg-danger font-weight-bold" href="lanches">Lanches</a>
+                <a class="dropdown-item text-warning h4 bg-danger font-weight-bold" href="lanches">Lanches</a>
                 <div class="dropdown-divider text-warning"></div>
-                <a class="dropdown-item text-warning h5 bg-danger font-weight-bold" href="cervejas">Cervejas</a>
+                <a class="dropdown-item text-warning h4 bg-danger font-weight-bold" href="cervejas">Cervejas</a>
                 <div class="dropdown-divider text-warning"></div>
-                <a class="dropdown-item text-warning h5 bg-danger font-weight-bold" href="bebidasna">Bebidas não-alcoólicas</a>
+                <a class="dropdown-item text-warning h4 bg-danger font-weight-bold" href="bebidasna">Bebidas não-alcoólicas</a>
                 <div class="dropdown-divider text-warning"></div>
-                <a class="dropdown-item text-warning h5 bg-danger font-weight-bold" href="porcoes">Porções</a>
+                <a class="dropdown-item text-warning h4 bg-danger font-weight-bold" href="porcoes">Porções</a>
               </div>
             </li>
             <li class="nav-item active">
@@ -35,8 +35,8 @@
           <div class="dropdown-divider bg-warning text-warning"></div>
 
           <form class="form-inline">
-            <a href="registrar"><button class="btn h5 btn-outline-warning mx-2 font-weight-bold" type="button">Registrar conta</button></a>
-            <a href="login"><button class="btn h5 btn-outline-warning mx-2 font-weight-bold" type="button">Entrar na conta</button></a>
+            <a href="registrar"><button class="btn btn-outline-warning mx-2 font-weight-bold" type="button"><p class="h5 font-weight-bold">Registrar conta</p></button></a>
+            <a href="login"><button class="btn btn-outline-warning mx-2 font-weight-bold" type="button"><p class="h5 font-weight-bold">Entrar na conta</p></button></a>
           </form>
         </div>
       </nav>

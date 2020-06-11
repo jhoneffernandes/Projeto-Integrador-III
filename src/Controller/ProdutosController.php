@@ -32,6 +32,7 @@ class ProdutosController extends AppController
      */
     public function view($id = null)
     {
+       //
         $produto = $this->Produtos->get($id, [
             'contain' => [],
         ]);
@@ -46,6 +47,7 @@ class ProdutosController extends AppController
      */
     public function add()
     {
+
         $produto = $this->Produtos->newEmptyEntity();
         if ($this->request->is('post')) {
             $produto = $this->Produtos->patchEntity($produto, $this->request->getData());
@@ -81,6 +83,7 @@ class ProdutosController extends AppController
             $this->Flash->error(__('O produto não pode ser alterado. Por favor tente novamente'));
         }
         $this->set(compact('produto'));
+
     }
 
     /**

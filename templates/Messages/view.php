@@ -27,12 +27,12 @@
                     <td><?= h($message->email) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Id') ?></th>
-                    <td><?= $this->Number->format($message->id) ?></td>
+                    <th><?= __('Celular') ?></th>
+                    <td><?= h($message->celular) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Celular') ?></th>
-                    <td><?= $this->Number->format($message->celular) ?></td>
+                    <th><?= __('Id') ?></th>
+                    <td><?= $this->Number->format($message->id) ?></td>
                 </tr>
             </table>
             <div class="text">

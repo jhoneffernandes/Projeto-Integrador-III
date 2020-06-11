@@ -57,7 +57,6 @@ class MessagesController extends AppController
             $this->Flash->error(__('The message could not be saved. Please, try again.'));
         }
         $this->set(compact('message'));
-        $this->Authorization->skipAuthorization();
     }
 
     /**

@@ -23,12 +23,12 @@
                     <td><?= h($reservation->client) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Id') ?></th>
-                    <td><?= $this->Number->format($reservation->id) ?></td>
+                    <th><?= __('Price') ?></th>
+                    <td><?= h($reservation->price) ?></td>
                 </tr>
                 <tr>
-                    <th><?= __('Price') ?></th>
-                    <td><?= $this->Number->format($reservation->price) ?></td>
+                    <th><?= __('Id') ?></th>
+                    <td><?= $this->Number->format($reservation->id) ?></td>
                 </tr>
             </table>
         </div>

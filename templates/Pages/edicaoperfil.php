@@ -121,3 +121,7 @@
               </div>
             </div>
           </div>
+
+          <?php
+$this->assign('title', 'Gela Guela - Edição de Perfil');
+?>

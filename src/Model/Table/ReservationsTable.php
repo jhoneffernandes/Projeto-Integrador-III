@@ -61,7 +61,8 @@ class ReservationsTable extends Table
             ->notEmptyString('client');
 
         $validator
-            ->integer('price')
+            ->scalar('price')
+            ->maxLength('price', 50)
             ->requirePresence('price', 'create')
             ->notEmptyString('price');
 

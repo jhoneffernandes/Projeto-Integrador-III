@@ -22,7 +22,7 @@
                 <tr>
                     <td><?= $this->Number->format($reservation->id) ?></td>
                     <td><?= h($reservation->client) ?></td>
-                    <td><?= $this->Number->format($reservation->price) ?></td>
+                    <td><?= h($reservation->price) ?></td>
                     <td class="actions">
                         <?= $this->Html->link(__('View'), ['action' => 'view', $reservation->id]) ?>
                         <?= $this->Html->link(__('Edit'), ['action' => 'edit', $reservation->id]) ?>
