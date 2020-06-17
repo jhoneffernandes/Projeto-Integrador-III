@@ -1,27 +1,27 @@
-<div class="text-danger text-center" style="   background: rgba(255, 196, 0, 1);">
+<div class="text-danger text-center">
             <div class="container d-flex align-items-center flex-column">
       <img class="masthead-avatar my-3" src="img/gglogo.svg" alt="">
-                <h1 class="my-3 mb-0 fontetema">Venha conhecer o Gela!</h1>
-                <div class="dividerzred col-12"><hr></div>
+                <h1 class="mt-3 fontetema">Venha conhecer o Gela!</h1>
                 <div>
                     <div>
                       <i class="fas fa-2x fa-hamburger my-3"></i>
+                      <i class="fas fa-2x fa-hamburger my-3 text-warning"></i>
                       <i class="fas fa-2x fa-hamburger my-3"></i>
-                      <i class="fas fa-2x fa-hamburger my-3"></i>
-                      <i class="fas fa-2x fa-hamburger my-3"></i>
+                      <i class="fas fa-2x fa-hamburger my-3 text-warning"></i>
                       <i class="fas fa-2x fa-hamburger my-3"></i>
 
                     </div>
                 </div>
-                <p class="font-weight-bold mb-3 h4">Conteúdo - Nosso endereço, horários de atendimento e o mapa para chegar até o Gela Guela</p>
+                <p class="font-weight-bold mb-3 h4">Conteúdo da página - Nosso endereço, horários de atendimento e o mapa para chegar até o Gela Guela</p>
             </div>
         </div>
+        <div class="dividerzyell"><hr></div>
 
 <div class="container-fluid">
  
         <div class="row mt-4 d-flex justify-content-center align-items-center text-center">
           <div class="col-lg-6 col-md-12">
-            <p class="h2 font-weight-bold mb-5">VENHA NOS CONHECER!</p>
+            <p class="h2 font-weight-bold mb-5 text-danger">VENHA NOS CONHECER!</p>
             <p class="h4 font-weight-bold">Endereço: Rua Tafarel Silva Nº 325 Taquaritinga-SP</p>
           </div>
           <div class="col-md-6 col-sm-12 localizacaoimg">
@@ -33,7 +33,7 @@
 
         <div class="row d-flex justify-content-center align-items-center text-center mt-5">
             <div class="col-lg-6 col-md-12">
-              <p class="h2 font-weight-bold mb-5">HORÁRIOS DE ATENDIMENTO</p>
+              <p class="h2 font-weight-bold mb-5 text-danger">HORÁRIOS DE ATENDIMENTO</p>
               <p class="h4 font-weight-bold my-5">De segunda a sábado das 18hrs as 00hrs</p>
             </div>
             <div class="col-md-6 col-sm-12">

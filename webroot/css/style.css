@@ -176,10 +176,9 @@ border-radius: 50%;
 
 }
 
-.dividerz hr , .dividerzred hr{
+.dividerz hr , .dividerzred hr , .dividerzyell hr{
    margin-top: 1rem;
   margin-bottom: 1rem;
-  border-top: 10px solid rgba(0, 0, 0, 0.9);
   border-radius: 1rem;
 }
 
@@ -191,6 +190,9 @@ border-radius: 50%;
    border-top: 10px solid rgba(255, 0, 0, 0.9);
  }
  
+ .dividerzyell hr{
+   border-top: 10px solid rgba(236, 213, 0, 0.9);
+ }
 
 /* Página Localização*/
 

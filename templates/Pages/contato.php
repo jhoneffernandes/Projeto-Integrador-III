@@ -1,36 +1,35 @@
-<div class="text-danger text-center" style="   background: rgba(255, 196, 0, 1);">
+<div class="text-danger text-center">
             <div class="container d-flex align-items-center flex-column">
       <img class="masthead-avatar my-3" src="img/gglogo.svg" alt="">
                 <h1 class="my-3 mb-0 fontetema">Fale conosco</h1>
-                <div class="dividerzred col-12"><hr></div>
                 <div>
                     <div>
+                    <i class="fas fa-2x fa-hamburger my-3"></i>
+                      <i class="fas fa-2x fa-hamburger my-3 text-warning"></i>
                       <i class="fas fa-2x fa-hamburger my-3"></i>
-                      <i class="fas fa-2x fa-hamburger my-3"></i>
-                      <i class="fas fa-2x fa-hamburger my-3"></i>
-                      <i class="fas fa-2x fa-hamburger my-3"></i>
+                      <i class="fas fa-2x fa-hamburger my-3 text-warning"></i>
                       <i class="fas fa-2x fa-hamburger my-3"></i>
 
                     </div>
                 </div>
-                <p class="font-weight-bold mb-3 h4">Conteúdo - Nosso e-mail, telefone e formulário de contato</p>
+                <p class="font-weight-bold mb-3 h4">Conteúdo da página - Nosso e-mail, telefone e formulário de contato</p>
             </div>
         </div>
+        <div class="dividerzyell"><hr></div>
 
         <div class="container">
         <div class="row d-flex justify-content-center align-items-center text-center mt-5">
             <div class="col-12">
-              <p class="h2 font-weight-bold mb-5">FALE CONOSCO</p>
-              <p class="h4 font-weight-bold my-3">(16) 3252-9999</p>
-              <p class="h4 font-weight-bold my-3">gelaguela@gmail.com</p>
+              <p class="h4 font-weight-bold my-3">Telefone: (16) 3252-9999</p>
+              <p class="h4 font-weight-bold my-3">E-mail de contato: gelaguela@gmail.com</p>
 
             </div>
             </div>
-            <div class="dividerzred"><hr></div>
+            <div class="dividerzyell"><hr></div>
 
             <div class="row d-flex justify-content-center align-items-center text-center mb-3 mt-5">
                 <div class="col-12">
-                  <p class="h2 font-weight-bold mb-5">ENVIE UMA MENSAGEM PRA GENTE</p>
+                  <p class="h2 font-weight-bold mb-5 text-danger">ENVIE UMA MENSAGEM PRA GENTE</p>
                   </div>
                 </div>
             </div>

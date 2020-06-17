@@ -1,14 +1,22 @@
-<div class="containercardapio">
+<div class="text-danger text-center">
+            <div class="container d-flex align-items-center flex-column">
+      <img class="masthead-avatar my-3" src="img/lanches.svg" alt="">
+                <h1 class="my-3 mb-0 fontetema">Lanches do Gela</h1>
+                <div>
+                    <div>
+                    <i class="fas fa-2x fa-hamburger my-3"></i>
+                      <i class="fas fa-2x fa-hamburger my-3 text-warning"></i>
+                      <i class="fas fa-2x fa-hamburger my-3"></i>
+                      <i class="fas fa-2x fa-hamburger my-3 text-warning"></i>
+                      <i class="fas fa-2x fa-hamburger my-3"></i>
 
-<img src="img/bannerlanches.jpg" alt="">
+                    </div>
+                </div>
+                <p class="font-weight-bold mb-3 h4">Conteúdo da página - Os lanches do nosso cardápio</p>
+            </div>
+        </div>
 
-<div class="centralizartextobanner text-nowrap">
-
-  <H1>Lanches</H1>
-
-</div>
-
-</div>
+<div class="dividerzyell"><hr></div>
 
 <div class="container marketing my-5">
   <div class="row d-flex justify-content-center align-items-center">

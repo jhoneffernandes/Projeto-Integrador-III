@@ -1,14 +1,23 @@
-<div class="containercardapio">
+<div class="text-danger text-center">
+            <div class="container d-flex align-items-center flex-column">
+      <img class="masthead-avatar my-3" src="img/cervejas.svg" alt="">
+                <h1 class="my-3 mb-0 fontetema">Cervejas do Gela</h1>
+                <div>
+                    <div>
+                    <i class="fas fa-2x fa-hamburger my-3"></i>
+                      <i class="fas fa-2x fa-hamburger my-3 text-warning"></i>
+                      <i class="fas fa-2x fa-hamburger my-3"></i>
+                      <i class="fas fa-2x fa-hamburger my-3 text-warning"></i>
+                      <i class="fas fa-2x fa-hamburger my-3"></i>
 
-<img src="img/cervejas.jpg" alt="">
+                    </div>
+                </div>
+                <p class="font-weight-bold mb-3 h4">Conteúdo da página - As cervejas do nosso cardápio</p>
+            </div>
+        </div>
 
-<div class="centralizartextobanner text-nowrap">
+<div class="dividerzyell"><hr></div>
 
-  <H1>Cervejas</H1>
-
-</div>
-
-</div>
 
 <div class="container marketing my-5">
   <div class="row d-flex justify-content-center align-items-center">

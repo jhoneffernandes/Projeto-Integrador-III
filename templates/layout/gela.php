@@ -16,7 +16,7 @@
 
 <?= $this->element('header'); ?>
 
-<main class="mb-4 mt-n2">
+<main class="mb-4 mt-n1">
 
 <?= $this->fetch('content') ?>
 

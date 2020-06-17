@@ -1,3 +1,22 @@
+<div class="text-danger text-center">
+            <div class="container d-flex align-items-center flex-column">
+      <img class="masthead-avatar my-3" src="img/gglogo.svg" alt="">
+                <h1 class="my-3 mb-0 fontetema">Bem vindos ao site do Gela Guela!</h1>
+                <div>
+                    <div>
+                    <i class="fas fa-2x fa-hamburger my-3"></i>
+                      <i class="fas fa-2x fa-hamburger my-3 text-warning"></i>
+                      <i class="fas fa-2x fa-hamburger my-3"></i>
+                      <i class="fas fa-2x fa-hamburger my-3 text-warning"></i>
+                      <i class="fas fa-2x fa-hamburger my-3"></i>
+
+                    </div>
+                </div>
+                <p class="font-weight-bold mb-3 h4">Conteúdo da página - Nossas promoções, os lanches mais pedidos da semana, e menu para ver nossos produtos</p>
+            </div>
+        </div>
+        <div class="dividerzyell"><hr></div>
+       
      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
