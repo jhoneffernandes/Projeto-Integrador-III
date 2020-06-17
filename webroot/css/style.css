@@ -10,7 +10,18 @@
 }
 
 .bg2 {
-   background-color: rgb(255, 232, 157);
+   background-color: rgb(220,53,69);
+
+}
+
+.dividerz hr , .dividerzred hr , .dividerzyell hr{
+   margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+}
+
+.dividerz hr{
+  border-top: 10px solid rgba(0, 0, 0, 0.9);
 }
 
 .bgfooter {
