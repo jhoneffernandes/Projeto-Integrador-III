@@ -22,8 +22,10 @@
             <fieldset>
                 <legend><?= __('Edit Reservation') ?></legend>
                 <?php
-                    echo $this->Form->control('client');
-                    echo $this->Form->control('price');
+                    echo $this->Form->control('total');
+                    echo $this->Form->control('created_at');
+                    echo $this->Form->control('client_id', ['options' => $clients]);
+                    echo $this->Form->control('products._ids', ['options' => $products]);
                 ?>
             </fieldset>
             <?= $this->Form->button(__('Submit')) ?>

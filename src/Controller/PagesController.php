@@ -49,13 +49,21 @@ class PagesController extends AppController
         parent::beforeFilter($event);
         // Configure the login action to not require authentication, preventing
         // the infinite redirect loop issue
-        $this->Authentication->addUnauthenticatedActions(['display']);
+        $this->Authentication->addUnauthenticatedActions(['display','teste']);
     }
 
     public function display(...$path): ?Response
     {
+        $this->loadModel('Burgers');
+        $burgers = $this->Burgers->find('all');
+        $this->set('burgers',$burgers);
+        $this->loadModel('Carouselimgs');
+        $carouselimgs = $this->Carouselimgs->find('all');
+        $this->set('carouselimgs',$carouselimgs);
         if (!$path) {
+           
             return $this->redirect('/');
+           
         }
         if (in_array('..', $path, true) || in_array('.', $path, true)) {
             throw new ForbiddenException();
@@ -78,7 +86,7 @@ class PagesController extends AppController
             }
             throw new NotFoundException();
         }
-
+              
     }
     
 }

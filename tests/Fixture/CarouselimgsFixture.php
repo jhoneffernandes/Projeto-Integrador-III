@@ -18,7 +18,9 @@ class CarouselimgsFixture extends TestFixture
     // phpcs:disable
     public $fields = [
         'id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => false, 'default' => null, 'comment' => '', 'autoIncrement' => true, 'precision' => null],
-        'imgname' => ['type' => 'string', 'length' => 100, 'null' => false, 'default' => null, 'collate' => 'utf8mb4_general_ci', 'comment' => '', 'precision' => null],
+        'img_sm_name' => ['type' => 'string', 'length' => 255, 'null' => false, 'default' => null, 'collate' => 'utf8mb4_general_ci', 'comment' => '', 'precision' => null],
+        'img_md_name' => ['type' => 'string', 'length' => 255, 'null' => false, 'default' => null, 'collate' => 'utf8mb4_general_ci', 'comment' => '', 'precision' => null],
+        'img_lg_name' => ['type' => 'string', 'length' => 255, 'null' => false, 'default' => null, 'collate' => 'utf8mb4_general_ci', 'comment' => '', 'precision' => null],
         '_constraints' => [
             'primary' => ['type' => 'primary', 'columns' => ['id'], 'length' => []],
         ],
@@ -38,7 +40,9 @@ class CarouselimgsFixture extends TestFixture
         $this->records = [
             [
                 'id' => 1,
-                'imgname' => 'Lorem ipsum dolor sit amet',
+                'img_sm_name' => 'Lorem ipsum dolor sit amet',
+                'img_md_name' => 'Lorem ipsum dolor sit amet',
+                'img_lg_name' => 'Lorem ipsum dolor sit amet',
             ],
         ];
         parent::init();

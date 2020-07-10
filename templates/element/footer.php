@@ -3,20 +3,20 @@
     <div class="col">
 
       <div class="row my-2 text-center bg-white">
-        <a class="col logofacebook" href="#"><i class="my-3 fab fa-facebook-f" style="font-size: 2rem;"></i></a>
-        <a class="col logowhatsapp" href="#"><i class="my-3 fab fa-whatsapp" style="font-size: 2rem; color: rgb(17, 148, 0);"></span></i></a>
-        <a class="col logoemail" href="#"><i class="my-3 far fa-envelope" style="font-size: 2rem; color: red;"></span></i></a>
+        <a class="col logofacebook" href="https://www.facebook.com/emporioepetiscaria/?ref=br_rs"><i class="my-3 fab fa-facebook-f" style="font-size: 2rem;"></i></a>
+        <a class="col logowhatsapp" href="/contato"><i class="my-3 fab fa-whatsapp" style="font-size: 2rem; color: rgb(17, 148, 0);"></span></i></a>
+        <a class="col logoemail" href="/contato"><i class="my-3 far fa-envelope" style="font-size: 2rem; color: red;"></span></i></a>
     </div>
 
-<div class="row text-warning h5 text-left my-1">
+<div class="row text-warning h5 font-weight-bold text-left my-1">
       <p class="row col-12">Endereço: Avenida Pedro Carletto, Nº 550, Taquaritinga-SP</p>
-      <p class="row col-12">CNPJ: 54.562.169/0001-64</p>
-      <p class="row col-12">Email de contato: teste@gmail.com</p>
+      <p class="row col-12">Celular: (16) 98824-2568</p>
+      <p class="row col-12">Email de contato: murylo2015taqua@gmail.com</p>
 
     </div>
     <div class="dropdown-divider text-warning"></div>
 
-    <div class="row text-warning h5 text-center mt-1">
+    <div class="row text-warning h6 font-weight-bold text-center mt-1">
       <p class="col">Todos os direitos reservados ©</p>
     </div>
 

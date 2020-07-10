@@ -9,7 +9,9 @@ use Cake\ORM\Entity;
  * Carouselimg Entity
  *
  * @property int $id
- * @property string $imgname
+ * @property string $img_sm_name
+ * @property string $img_md_name
+ * @property string $img_lg_name
  */
 class Carouselimg extends Entity
 {
@@ -23,6 +25,8 @@ class Carouselimg extends Entity
      * @var array
      */
     protected $_accessible = [
-        'imgname' => true,
+        'img_sm_name' => true,
+        'img_md_name' => true,
+        'img_lg_name' => true,
     ];
 }

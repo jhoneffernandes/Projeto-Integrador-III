@@ -66,21 +66,29 @@ $routes->scope('/', function (RouteBuilder $builder) {
 
     $builder->connect('/localizacao', ['controller' => 'Pages', 'action' => 'display', 'localizacao']);
 
+    $builder->connect('/contato', ['controller' => 'Messages', 'action' => 'add']);
+
+
     $builder->connect('/contato', ['controller' => 'Pages', 'action' => 'display', 'contato']);
 
     $builder->connect('/sobre', ['controller' => 'Pages', 'action' => 'display', 'sobre']);
 
-    $builder->connect('/lanches', ['controller' => 'Pages', 'action' => 'display', 'lanches']);
-    $builder->connect('/cervejas', ['controller' => 'Pages', 'action' => 'display', 'cervejas']);
-    $builder->connect('/bebidasna', ['controller' => 'Pages', 'action' => 'display', 'bebidasna']);
-    $builder->connect('/porcoes', ['controller' => 'Pages', 'action' => 'display', 'porcoes']);
+ 
+    $builder->connect('/registrar', ['controller' => 'Clients', 'action' => 'register']);
+
+    $builder->connect('/entrar', ['controller' => 'Clients', 'action' => 'login']);
+    $builder->connect('/mudarinformacoes', ['controller' => 'Clients', 'action' => 'changeInfo']);
+
+    $builder->connect('/entraradm', ['controller' => 'Users', 'action' => 'login']);
+
+    $builder->connect('/painelcliente', ['controller' => 'Pages', 'action' => 'display', 'painelcliente']);
+    $builder->connect('/paineladm', ['controller' => 'Users', 'action' => 'painelAdm']);
+
+    $builder->connect('/reservas', ['controller' => 'Carts', 'action' => 'listReservations']);
 
 
-    $builder->connect('/registrar', ['controller' => 'Pages', 'action' => 'display', 'registrar']);
-    $builder->connect('/login', ['controller' => 'Pages', 'action' => 'display', 'login']);
-    $builder->connect('/painel', ['controller' => 'Pages', 'action' => 'display', 'paineladm']);
-    $builder->connect('/edicaoperfil', ['controller' => 'Pages', 'action' => 'display', 'edicaoperfil']);
 
+    $builder->connect('/produtos', ['controller' => 'Products', 'action' => 'listProducts']);
 
     /*
      * ...and connect the rest of 'Pages' controller's URLs.

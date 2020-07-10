@@ -66,7 +66,8 @@ class MessagesTable extends Table
             ->notEmptyString('email');
 
         $validator
-            ->integer('celular')
+            ->scalar('celular')
+            ->maxLength('celular', 13)
             ->requirePresence('celular', 'create')
             ->notEmptyString('celular');
 

@@ -14,18 +14,9 @@
 
 }
 
-.dividerz hr , .dividerzred hr , .dividerzyell hr{
-   margin-top: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 1rem;
-}
+.bg3 {
+   background-color:rgb(255,253,233);
 
-.dividerz hr{
-  border-top: 10px solid rgba(0, 0, 0, 0.9);
-}
-
-.bgfooter {
-   background-color: gainsboro;
 }
 
 .logo img{
@@ -51,9 +42,14 @@ border-radius: 10rem;
 
 .carousel-inner img{
    max-height: 450px;
-   min-height: 150px;
+   min-height: 300px;
    width: 100%;
    margin: auto;
+}
+
+.imgbanner {
+   width: 100%;
+   height: auto;
 }
 
 .carousel-indicators li {
@@ -61,13 +57,6 @@ border-radius: 10rem;
 border-radius: 50%;
     width: 12px;
     height: 12px;}
-
-.bannerhome{
-   max-height: 500px;
-   width: 40%;
-   margin: auto;
-   min-height: 350px;
-}
 
 .petiscos{
    height: 300px;
@@ -129,6 +118,9 @@ border-radius: 50%;
 }
 
 /* Páginas do cardápio (Lanches) */
+.imgcard img{
+   height: 225px ;
+}
 
 .containercardapio {
    position: relative;
@@ -147,25 +139,6 @@ border-radius: 50%;
    height: 200px;
 }
 
-.centralizartextobanner {
-   position: absolute;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   top: 50%;
-   left: 50%;
-   background: rgba(0, 0, 0, 0.62);
-   transform: translate(-50%, -50%);
-   min-width: 100%;
-   min-height: 300px; 
-}
-
-.centralizartextobanner h1{
-      font-family: 'Norican', cursive;
-   font-size: 4rem;
-   line-height: 1;
-   word-break: keep-all;
-}
 
 .circuloitens {
    height: 100px;
@@ -270,3 +243,12 @@ border-radius: 50%;
  .teste a{
     text-decoration: none;
  }
+
+
+ /* Páginas do painel adm*/
+.next a, .prev a {
+   text-decoration: none;
+   color: rgb(255, 255, 255);
+   font-weight: bold;
+   font-size: 20px;
+}

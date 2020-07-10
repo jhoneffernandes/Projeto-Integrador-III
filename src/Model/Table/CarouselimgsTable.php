@@ -55,10 +55,22 @@ class CarouselimgsTable extends Table
             ->allowEmptyString('id', null, 'create');
 
         $validator
-            ->scalar('imgname')
-            ->maxLength('imgname', 100)
-            ->requirePresence('imgname', 'create')
-            ->notEmptyString('imgname');
+            ->scalar('img_sm_name')
+            ->maxLength('img_sm_name', 255)
+            ->requirePresence('img_sm_name', 'create')
+            ->notEmptyString('img_sm_name');
+
+        $validator
+            ->scalar('img_md_name')
+            ->maxLength('img_md_name', 255)
+            ->requirePresence('img_md_name', 'create')
+            ->notEmptyString('img_md_name');
+
+        $validator
+            ->scalar('img_lg_name')
+            ->maxLength('img_lg_name', 255)
+            ->requirePresence('img_lg_name', 'create')
+            ->notEmptyString('img_lg_name');
 
         return $validator;
     }

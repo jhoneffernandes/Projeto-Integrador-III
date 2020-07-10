@@ -21,7 +21,6 @@ class CarouselimgsController extends AppController
         $carouselimgs = $this->paginate($this->Carouselimgs);
 
         $this->set(compact('carouselimgs'));
-
     }
 
     /**
@@ -38,7 +37,6 @@ class CarouselimgsController extends AppController
         ]);
 
         $this->set(compact('carouselimg'));
-
     }
 
     /**
@@ -47,16 +45,16 @@ class CarouselimgsController extends AppController
      * @return \Cake\Http\Response|null|void Redirects on successful add, renders view otherwise.
      */
     public function add()
-    {    
+    {
         $carouselimg = $this->Carouselimgs->newEmptyEntity();
         if ($this->request->is('post')) {
             $carouselimg = $this->Carouselimgs->patchEntity($carouselimg, $this->request->getData());
             if ($this->Carouselimgs->save($carouselimg)) {
-                $this->Flash->success(__('The carouselimg has been saved.'));
+                $this->Flash->success(__('As novas imagens foram salvas com sucesso'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The carouselimg could not be saved. Please, try again.'));
+            $this->Flash->error(__('As novas imagens não foram salvas com sucesso, tente novamente mais tarde'));
         }
         $this->set(compact('carouselimg'));
     }
@@ -69,18 +67,18 @@ class CarouselimgsController extends AppController
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
     public function edit($id = null)
-    {     
-            $carouselimg = $this->Carouselimgs->get($id, [
+    {
+        $carouselimg = $this->Carouselimgs->get($id, [
             'contain' => [],
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $carouselimg = $this->Carouselimgs->patchEntity($carouselimg, $this->request->getData());
             if ($this->Carouselimgs->save($carouselimg)) {
-                $this->Flash->success(__('The carouselimg has been saved.'));
+                $this->Flash->success(__('As novas imagens foram salvas com sucesso.'));
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The carouselimg could not be saved. Please, try again.'));
+            $this->Flash->error(__('As novas imagens não foram salvas com sucesso, tente novamente mais tarde'));
         }
         $this->set(compact('carouselimg'));
     }
@@ -93,13 +91,13 @@ class CarouselimgsController extends AppController
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
     public function delete($id = null)
-    {        
+    {
         $this->request->allowMethod(['post', 'delete']);
         $carouselimg = $this->Carouselimgs->get($id);
         if ($this->Carouselimgs->delete($carouselimg)) {
-            $this->Flash->success(__('The carouselimg has been deleted.'));
+            $this->Flash->success(__('As imagens foram excluídas com sucesso'));
         } else {
-            $this->Flash->error(__('The carouselimg could not be deleted. Please, try again.'));
+            $this->Flash->error(__('As imagens não foram excluídas com sucesso, tente novamente mais tarde'));
         }
 
         return $this->redirect(['action' => 'index']);

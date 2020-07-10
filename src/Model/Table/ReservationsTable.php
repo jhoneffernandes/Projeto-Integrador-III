@@ -11,6 +11,9 @@ use Cake\Validation\Validator;
 /**
  * Reservations Model
  *
+ * @property \App\Model\Table\ClientsTable&\Cake\ORM\Association\BelongsTo $Clients
+ * @property \App\Model\Table\ProductsTable&\Cake\ORM\Association\BelongsToMany $Products
+ *
  * @method \App\Model\Entity\Reservation newEmptyEntity()
  * @method \App\Model\Entity\Reservation newEntity(array $data, array $options = [])
  * @method \App\Model\Entity\Reservation[] newEntities(array $data, array $options = [])
@@ -40,6 +43,16 @@ class ReservationsTable extends Table
         $this->setTable('reservations');
         $this->setDisplayField('id');
         $this->setPrimaryKey('id');
+
+        $this->belongsTo('Clients', [
+            'foreignKey' => 'client_id',
+            'joinType' => 'INNER',
+        ]);
+        $this->belongsToMany('Products', [
+            'foreignKey' => 'reservation_id',
+            'targetForeignKey' => 'product_id',
+            'joinTable' => 'products_reservations',
+        ]);
     }
 
     /**
@@ -51,21 +64,32 @@ class ReservationsTable extends Table
     public function validationDefault(Validator $validator): Validator
     {
         $validator
+            ->decimal('total')
+            ->requirePresence('total', 'create')
+            ->notEmptyString('total');
+
+        $validator
+            ->dateTime('created_at')
+            ->notEmptyDateTime('created_at');
+
+        $validator
             ->integer('id')
             ->allowEmptyString('id', null, 'create');
 
-        $validator
-            ->scalar('client')
-            ->maxLength('client', 150)
-            ->requirePresence('client', 'create')
-            ->notEmptyString('client');
-
-        $validator
-            ->scalar('price')
-            ->maxLength('price', 50)
-            ->requirePresence('price', 'create')
-            ->notEmptyString('price');
-
         return $validator;
+    }
+
+    /**
+     * Returns a rules checker object that will be used for validating
+     * application integrity.
+     *
+     * @param \Cake\ORM\RulesChecker $rules The rules object to be modified.
+     * @return \Cake\ORM\RulesChecker
+     */
+    public function buildRules(RulesChecker $rules): RulesChecker
+    {
+        $rules->add($rules->existsIn(['client_id'], 'Clients'));
+
+        return $rules;
     }
 }

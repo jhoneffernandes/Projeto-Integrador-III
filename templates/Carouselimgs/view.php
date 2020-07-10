@@ -19,8 +19,16 @@
             <h3><?= h($carouselimg->id) ?></h3>
             <table>
                 <tr>
-                    <th><?= __('Imgname') ?></th>
-                    <td><?= h($carouselimg->imgname) ?></td>
+                    <th><?= __('Img Sm Name') ?></th>
+                    <td><?= h($carouselimg->img_sm_name) ?></td>
+                </tr>
+                <tr>
+                    <th><?= __('Img Md Name') ?></th>
+                    <td><?= h($carouselimg->img_md_name) ?></td>
+                </tr>
+                <tr>
+                    <th><?= __('Img Lg Name') ?></th>
+                    <td><?= h($carouselimg->img_lg_name) ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Id') ?></th>

@@ -18,6 +18,9 @@ class ReservationsController extends AppController
      */
     public function index()
     {
+        $this->paginate = [
+            'contain' => ['Clients'],
+        ];
         $reservations = $this->paginate($this->Reservations);
 
         $this->set(compact('reservations'));
@@ -33,7 +36,7 @@ class ReservationsController extends AppController
     public function view($id = null)
     {
         $reservation = $this->Reservations->get($id, [
-            'contain' => [],
+            'contain' => ['Clients', 'Products'],
         ]);
 
         $this->set(compact('reservation'));
@@ -48,7 +51,22 @@ class ReservationsController extends AppController
     {
         $reservation = $this->Reservations->newEmptyEntity();
         if ($this->request->is('post')) {
-            $reservation = $this->Reservations->patchEntity($reservation, $this->request->getData());
+            
+            $dados = $this->request->getData();
+            $dados['created_at'] = date('Y-m-d H:i:s');
+            $reservation = $this->Reservations->patchEntity($reservation , $dados);
+            
+            
+            $reservation->products = [];
+            $reservation->products[0] = $this->Reservations->Products->get($dados['products']);
+            $reservation->products[0]->_joinData = new \Cake\ORM\Entity;
+            $reservation->products[0]->_joinData->quantity = $dados['quantity'];
+            $reservation->products[0]->_joinData->price = $reservation->products[0]->price;
+            $reservation->setDirty('products',true);
+
+            $reservation->total = $reservation->products[0]->_joinData->quantity * $reservation->products[0]->_joinData->price;
+
+            
             if ($this->Reservations->save($reservation)) {
                 $this->Flash->success(__('The reservation has been saved.'));
 
@@ -56,7 +74,9 @@ class ReservationsController extends AppController
             }
             $this->Flash->error(__('The reservation could not be saved. Please, try again.'));
         }
-        $this->set(compact('reservation'));
+        $clients = $this->Reservations->Clients->find('list', ['limit' => 200]);
+        $products = $this->Reservations->Products->find('list', ['limit' => 200]);
+        $this->set(compact('reservation', 'clients', 'products'));
     }
 
     /**
@@ -69,7 +89,7 @@ class ReservationsController extends AppController
     public function edit($id = null)
     {
         $reservation = $this->Reservations->get($id, [
-            'contain' => [],
+            'contain' => ['Products'],
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $reservation = $this->Reservations->patchEntity($reservation, $this->request->getData());
@@ -80,7 +100,9 @@ class ReservationsController extends AppController
             }
             $this->Flash->error(__('The reservation could not be saved. Please, try again.'));
         }
-        $this->set(compact('reservation'));
+        $clients = $this->Reservations->Clients->find('list', ['limit' => 200]);
+        $products = $this->Reservations->Products->find('list', ['limit' => 200]);
+        $this->set(compact('reservation', 'clients', 'products'));
     }
 
     /**

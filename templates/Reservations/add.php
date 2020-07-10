@@ -17,8 +17,9 @@
             <fieldset>
                 <legend><?= __('Add Reservation') ?></legend>
                 <?php
-                    echo $this->Form->control('client');
-                    echo $this->Form->control('price');
+                    echo $this->Form->control('client_id', ['options' => $clients]);
+                    echo $this->Form->control('products',['label'=>['text'=>'Produto'],'options' => $products]);
+                    echo $this->Form->control('quantity', ['type' => 'number']);
                 ?>
             </fieldset>
             <?= $this->Form->button(__('Submit')) ?>

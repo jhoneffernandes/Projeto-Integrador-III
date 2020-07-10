@@ -8,9 +8,13 @@ use Cake\ORM\Entity;
 /**
  * Reservation Entity
  *
+ * @property string $total
+ * @property \Cake\I18n\FrozenTime $created_at
+ * @property int $client_id
  * @property int $id
- * @property string $client
- * @property string $price
+ *
+ * @property \App\Model\Entity\Client $client
+ * @property \App\Model\Entity\Product[] $products
  */
 class Reservation extends Entity
 {
@@ -24,7 +28,10 @@ class Reservation extends Entity
      * @var array
      */
     protected $_accessible = [
+        'total' => true,
+        'created_at' => true,
+        'client_id' => true,
         'client' => true,
-        'price' => true,
+        'products' => true,
     ];
 }

@@ -23,6 +23,9 @@ class ReservationsControllerTest extends TestCase
      */
     protected $fixtures = [
         'app.Reservations',
+        'app.Clients',
+        'app.Products',
+        'app.ProductsReservations',
     ];
 
     /**

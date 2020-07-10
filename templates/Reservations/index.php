@@ -8,21 +8,23 @@
     <?= $this->Html->link(__('New Reservation'), ['action' => 'add'], ['class' => 'button float-right']) ?>
     <h3><?= __('Reservations') ?></h3>
     <div class="table-responsive">
-        <table>
+        <table class="table table-striped table-bordered table-hover">
             <thead>
                 <tr>
+                    <th><?= $this->Paginator->sort('total') ?></th>
+                    <th><?= $this->Paginator->sort('created_at') ?></th>
+                    <th><?= $this->Paginator->sort('client_id') ?></th>
                     <th><?= $this->Paginator->sort('id') ?></th>
-                    <th><?= $this->Paginator->sort('client') ?></th>
-                    <th><?= $this->Paginator->sort('price') ?></th>
                     <th class="actions"><?= __('Actions') ?></th>
                 </tr>
             </thead>
             <tbody>
                 <?php foreach ($reservations as $reservation): ?>
                 <tr>
+                    <td><?= $this->Number->format($reservation->total) ?></td>
+                    <td><?= h($reservation->created_at) ?></td>
+                    <td><?= $reservation->has('client') ? $this->Html->link($reservation->client->name, ['controller' => 'Clients', 'action' => 'view', $reservation->client->id]) : '' ?></td>
                     <td><?= $this->Number->format($reservation->id) ?></td>
-                    <td><?= h($reservation->client) ?></td>
-                    <td><?= h($reservation->price) ?></td>
                     <td class="actions">
                         <?= $this->Html->link(__('View'), ['action' => 'view', $reservation->id]) ?>
                         <?= $this->Html->link(__('Edit'), ['action' => 'edit', $reservation->id]) ?>

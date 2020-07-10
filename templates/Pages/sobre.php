@@ -12,7 +12,7 @@
 
                     </div>
                 </div>
-                <p class="font-weight-bold mb-3 h4">Conteúdo da página - Nossa história, nossos objetivos, nosso vídeo promocional</p>
+                <p class="font-weight-bold mb-3 h4">Conteúdo da página - Nossa história e nossos objetivos</p>
             </div>
         </div>
         <div class="dividerzyell"><hr></div>
@@ -73,6 +73,7 @@ O nome Gela Guela surgiu após uma conversa entre a irmã, e a esposa do proprie
                           </div>
 
             </div>
+
             <div class="dividerzyell"><hr></div>
 
            
@@ -85,10 +86,9 @@ O nome Gela Guela surgiu após uma conversa entre a irmã, e a esposa do proprie
             <div class="container my-5 d-flex justify-content-center">
               <div class="col-12">
             <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item" src="img/video.mp4" allowfullscreen></iframe>
 </div>
 </div></div>
-
 <?php
 $this->assign('title', 'Gela Guela - Sobre o Gela');
 ?>

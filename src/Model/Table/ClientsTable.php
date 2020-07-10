@@ -40,6 +40,13 @@ class ClientsTable extends Table
         $this->setTable('clients');
         $this->setDisplayField('name');
         $this->setPrimaryKey('id');
+
+        $this->hasMany('Carts', [
+            'foreignKey' => 'client_id',
+        ]);
+        $this->hasMany('Reservations', [
+            'foreignKey' => 'client_id',
+        ]);
     }
 
     /**
@@ -68,13 +75,13 @@ class ClientsTable extends Table
 
         $validator
             ->scalar('phone')
-            ->maxLength('phone', 11)
+            ->maxLength('phone', 13)
             ->requirePresence('phone', 'create')
             ->notEmptyString('phone');
 
         $validator
             ->scalar('cpf')
-            ->maxLength('cpf', 11)
+            ->maxLength('cpf', 14)
             ->requirePresence('cpf', 'create')
             ->notEmptyString('cpf');
 
